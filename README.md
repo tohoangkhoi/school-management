@@ -1,7 +1,4 @@
-# Awesome Project Build with TypeORM
+# Migration
 
-Steps to run this project:
-
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+- Generate migration: typeorm migration:create ./migration/<migration-file-name>
+- Run all migrations: npx typeorm-ts-node-esm migration:run -d ./src/data-source.ts
