@@ -11,15 +11,12 @@ export class User {
   @Column()
   lastName: string;
 
-  @Column()
-  age: number;
-
   @CreateDateColumn()
   createdAt: Date;
 
   @UpdateDateColumn()
   updatedAt: Date;
 
-  @Column({ type: "text", select: false, nullable: true })
+  @Column({ type: "text", nullable: true })
   password: string;
 }
